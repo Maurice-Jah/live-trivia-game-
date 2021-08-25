@@ -1,0 +1,167 @@
+.users {
+  margin: 3rem 5rem;
+  padding: 1rem 0rem;
+  position: relative;
+
+  &-search {
+    display: flex;
+    align-items: center;
+    border-radius: 3.125rem;
+    background-color: #fff;
+    height: 3.75rem;
+    width: 3.75rem;
+    transition: width 300ms ease-in-out;
+    padding: 5px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    overflow: hidden;
+
+    &__text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-grow: 1;
+      font-size: 1rem;
+      padding: 0 1.5rem;
+      border: 0;
+      border-radius: 3.125rem;
+      line-height: 3.75rem;
+      opacity: 0;
+      width: 86%;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__submit {
+      font-size: 1.2rem;
+      cursor: pointer;
+      border: 0;
+      background: transparent;
+      border-radius: 50%;
+      width: 3.125rem;
+      height: 3.125rem;
+      margin-left: auto;
+      transition: background 150ms ease-in-out;
+    }
+
+    &:focus-within {
+      width: 40%;
+
+      .users-search__text {
+        opacity: 1;
+        cursor: initial;
+      }
+
+      .users-search__submit {
+        color: white;
+        background-color: $light-black;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Users section
+.users-number {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 1rem;
+  .fa-users {
+    padding: 0.5rem;
+  }
+
+  &__total {
+    font-weight: bold;
+  }
+}
+
+// user header
+.users-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 3fr 2fr 2fr;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: $dark-color;
+  color: $white-color;
+
+  & > * {
+    border-right: 1px solid black;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-weight: bold;
+  }
+
+  &__number {
+    border-left: 1px solid black;
+  }
+}
+
+// users body
+.users-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 3fr 2fr 2fr;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+  & > * {
+    border-right: 1px solid black;
+    text-align: center;
+    line-height: 3rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid black;
+  }
+
+  &__number {
+    border-left: 1px solid black;
+  }
+
+  &__image {
+    height: 4.375rem;
+    display: block;
+    text-align: center;
+
+    .users-image {
+      width: 80%;
+      height: 100%;
+      border-radius: 8px;
+
+      text-align: center;
+    }
+  }
+
+  &__status {
+    background-color: $light-green;
+    color: white;
+  }
+
+  &__status-not {
+    background-color: $dark-yellow;
+    color: white;
+  }
+
+  &__delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--btn {
+      background-color: $light-pink;
+      padding: 0.625rem 1.25rem;
+      border: 0;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

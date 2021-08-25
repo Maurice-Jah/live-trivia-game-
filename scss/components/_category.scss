@@ -1,0 +1,196 @@
+.header__category {
+  background-color: $white-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-title {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+
+  &-profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.2rem 0;
+    margin-right: 2rem;
+
+    &--image {
+      width: 3rem;
+      height: 3rem;
+      display: block;
+
+      &-pix {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    &--name {
+      margin-left: 0.5rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+// Football category name
+.category-name {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+
+  & > * {
+    margin: 0rem 0.5rem;
+  }
+  &__title {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+  }
+
+  &__edit,
+  &__delete {
+    padding: 0.2rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    color: $white-color;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: $dark-yellow;
+      cursor: pointer;
+      color: $white-color;
+    }
+  }
+
+  &__edit {
+    background-color: $light-green;
+  }
+
+  &__delete {
+    background-color: $light-pink;
+  }
+}
+
+// Cateory main
+.category-main {
+  margin: 0rem 3rem;
+
+  &__header {
+    display: grid;
+    grid-template-columns: 0.3fr 4fr 1fr 1.5fr;
+    color: $white-color;
+
+    &-category,
+    &-questions,
+    &-level,
+    &-actions {
+      background-color: $dark-purple;
+      background-color: $light-black;
+      padding: 1rem;
+      text-align: center;
+      border-right: 1px solid $black-color;
+    }
+
+    &-actions {
+      border-right: none;
+    }
+  }
+
+  &__row1,
+  &__row2,
+  &__row3 {
+    display: grid;
+    grid-template-columns: 0.3fr 4fr 1fr 1.5fr;
+    border-bottom: 1px solid black;
+
+    &-number {
+      border-left: 1px solid $black-color;
+    }
+    &-cta {
+      border-right: 1px solid $black-color;
+    }
+
+    & p {
+      padding: 1rem;
+      text-align: center;
+      border-right: 1px solid $black-color;
+      transition: background-color 0.5s ease;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    &-question:hover {
+      background-color: $light-green;
+      color: white;
+      cursor: pointer;
+      .hide {
+        display: block;
+      }
+
+      .show {
+        display: none;
+      }
+    }
+
+    .bold {
+      color: $light-pink;
+      font-size: 1.5rem;
+    }
+
+    & > p:nth-child(2):hover {
+      background-color: $light-green;
+      color: $white-color;
+      cursor: pointer;
+    }
+
+    &-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &--edit,
+      &--delete {
+        padding: 0.5rem;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        border-radius: 0.3rem;
+        color: $white-color;
+        font-family: "Poppins", serif;
+        margin: 0 1rem;
+        transition: background-color 0.5s ease;
+
+        &:hover {
+          background-color: $dark-yellow;
+          cursor: pointer;
+          color: $white-color;
+        }
+      }
+
+      &--edit {
+        background-color: $light-green;
+        padding: 0.5rem 0.8rem;
+      }
+
+      &--delete {
+        background-color: $light-pink;
+      }
+    }
+
+    &-level,
+    &-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

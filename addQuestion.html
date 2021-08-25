@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- add icon link -->
+    <link rel="icon" href="images/logo.svg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Add question</title>
+  </head>
+  <body class>
+    <form action="#" class="add-question">
+      <a href="football.html" class="add-question__close">&times</a>
+
+      <div class="wrapper-addQuestion">
+        <h1 class="add-question__title">Add Question</h1>
+
+        <label for="add-question__No">
+          <p>Question 1</p>
+          <textarea
+            name="add-question__text"
+            id="add-question__No"
+            class="add-question__option--textarea"
+          ></textarea>
+        </label>
+
+        <label for="add-question__option--text">
+          <p>Option A</p>
+          <input
+            type="text"
+            id="add-question__option--text"
+            class="add-question__option--text"
+          />
+        </label>
+
+        <label for="add-question__option--text">
+          <p>Option B</p>
+          <input
+            type="text"
+            id="add-question__option--text"
+            class="add-question__option--text"
+          />
+        </label>
+
+        <label for="add-question__option--text">
+          <p>Option C</p>
+          <input
+            type="text"
+            id="add-question__option--text"
+            class="add-question__option--text"
+          />
+        </label>
+
+        <label for="add-question__option--text">
+          <p>Answer</p>
+          <input
+            type="text"
+            id="add-question__option--text"
+            class="add-question__option--text"
+          />
+        </label>
+
+        <label
+          for="add-question__option--level "
+          class="add-question__option--level"
+        >
+          <p>Level</p>
+          <div class="radio-btns">
+            <label for="easy">
+              <input type="radio" name="level" id="easy" /> Easy
+            </label>
+            <label for="medium">
+              <input type="radio" name="level" id="medium" checked /> Medium
+            </label>
+            <label for="difficult">
+              <input type="radio" name="level" id="difficult" /> Difficult
+            </label>
+          </div>
+        </label>
+
+        <div class="add-question__cta">
+          <button type="submit" class="add-question__cta--edit">Done</button>
+          <button type="submit" class="add-question__cta--delete">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
